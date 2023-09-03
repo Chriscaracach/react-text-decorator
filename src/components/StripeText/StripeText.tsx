@@ -2,10 +2,16 @@ import "./StripeText.scss";
 
 import StripeDecorator from "./StripeDecorator";
 
-const StripeText = ({ text }: { text: string }) => {
+interface StripeTextProps {
+	text: string;
+	color: string;
+	customClassname: string;
+}
+
+const StripeText = ({ text = "", color, customClassname = "" }: StripeTextProps) => {
 	return (
-		<span className="rtd-stripe">
-			<StripeDecorator />
+		<span className={`rtd-stripe ${customClassname}`}>
+			<StripeDecorator color={color} />
 			<p>{text}</p>
 		</span>
 	);

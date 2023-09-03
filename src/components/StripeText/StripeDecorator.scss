@@ -1,0 +1,57 @@
+$color-palette: (
+	//Maybe we can move this a lever higher.
+	default: black,
+	primary: #3498db,
+	error: #e74c3c,
+	success: #2ecc71,
+	warning: #f39c12
+);
+
+.rtd-stripe {
+	&-1 {
+		top: 22px;
+		left: -11px;
+		position: relative;
+		background-color: black;
+		width: 10px;
+		height: 1px;
+	}
+	&-2 {
+		transform: rotate(45deg);
+		top: 16px;
+		left: -8px;
+		position: relative;
+		background-color: black;
+		width: 10px;
+		height: 1px;
+	}
+	&-3 {
+		transform: rotate(90deg);
+		top: 12px;
+		left: -3px;
+		position: relative;
+		background-color: black;
+		width: 10px;
+		height: 1px;
+	}
+
+	&-color-default {
+		background-color: map-get($color-palette, default);
+	}
+
+	&-color-primary {
+		background-color: map-get($color-palette, primary);
+	}
+
+	&-color-error {
+		background-color: map-get($color-palette, error);
+	}
+
+	&-color-success {
+		background-color: map-get($color-palette, success);
+	}
+
+	&-color-warning {
+		background-color: map-get($color-palette, warning);
+	}
+}
