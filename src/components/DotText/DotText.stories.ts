@@ -1,18 +1,18 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import StripeText from "./StripeText";
+import DotText from "./DotText";
 
 const meta = {
-	title: "StripeText",
-	component: StripeText,
-} satisfies Meta<typeof StripeText>;
+	title: "DotText",
+	component: DotText,
+} satisfies Meta<typeof DotText>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
 	args: {
-		text: "StripeText",
+		text: "DotText",
 		color: "default",
 		customClassname: "",
 	},

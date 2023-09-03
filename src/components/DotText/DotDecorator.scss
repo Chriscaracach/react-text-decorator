@@ -1,0 +1,36 @@
+$color-palette: (
+	//Maybe we can move this a lever higher.
+	default: black,
+	primary: #3498db,
+	error: #e74c3c,
+	success: #2ecc71,
+	warning: #f39c12
+);
+
+.rtd-dot {
+	&-decorator {
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+	}
+
+	&-color-default {
+		background-color: map-get($color-palette, default);
+	}
+
+	&-color-primary {
+		background-color: map-get($color-palette, primary);
+	}
+
+	&-color-error {
+		background-color: map-get($color-palette, error);
+	}
+
+	&-color-success {
+		background-color: map-get($color-palette, success);
+	}
+
+	&-color-warning {
+		background-color: map-get($color-palette, warning);
+	}
+}
