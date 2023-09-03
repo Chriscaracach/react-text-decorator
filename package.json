@@ -7,8 +7,8 @@
 	"files": [
 		"dist"
 	],
-	"main": "./dist/my-component.umd.cjs",
-	"module": "./dist/my-component.js",
+	"main": "./dist/react-text-decorator.umd.cjs",
+	"module": "./dist/react-text-decorator.js",
 	"types": "./dist/index.d.ts",
 	"peerDependencies": {
 		"react": "^18.2.0",
