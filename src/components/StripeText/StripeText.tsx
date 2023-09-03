@@ -4,14 +4,14 @@ import StripeDecorator from "./StripeDecorator";
 
 interface StripeTextProps {
 	text: string;
-	color: string;
-	customClassname: string;
+	color?: string;
+	customClassname?: string;
 }
 
 const StripeText = ({ text = "", color, customClassname = "" }: StripeTextProps) => {
 	return (
 		<span className={`rtd-stripe ${customClassname}`}>
-			<StripeDecorator color={color} />
+			<StripeDecorator color={color ?? ""} />
 			<p>{text}</p>
 		</span>
 	);
