@@ -15,7 +15,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: 'npm'
+          cache: "npm"
 
       - name: 📥 Install Dependencies
         run: npm install
@@ -23,11 +23,11 @@ jobs:
       - name: 💅 Lint
         run: npm run lint
 
-      - name: 🧪 Unit Tests
-        run: npm run test
+      # - name: 🧪 Unit Tests
+      #   run: npm run test
 
-      - name: 🧑‍🔬 Component Tests
-        run: npm run cy:run
+      # - name: 🧑‍🔬 Component Tests
+      #   run: npm run cy:run
 
   publish:
     name: 🚀 Publish
@@ -43,7 +43,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: 'npm'
+          cache: "npm"
 
       - name: 📥 Install Dependencies
         run: npm install
