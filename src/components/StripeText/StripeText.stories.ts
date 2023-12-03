@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import StripeText from "./StripeText";
+import { StripeText } from "./StripeText";
 
 const meta = {
 	title: "StripeText",

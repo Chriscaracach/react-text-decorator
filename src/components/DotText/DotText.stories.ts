@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import DotText from "./DotText";
+import { DotText } from "./DotText";
 
 const meta = {
 	title: "DotText",
