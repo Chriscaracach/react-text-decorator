@@ -2,7 +2,7 @@
 	"name": "@christian-caracach/react-text-decorator",
 	"author": "Christian Caracach",
 	"license": "MIT",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"type": "module",
 	"files": [
 		"dist"
