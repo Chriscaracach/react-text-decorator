@@ -8,7 +8,7 @@ interface StripeTextProps {
 	customClassname?: string;
 }
 
-const StripeText = ({ text = "", color, customClassname = "" }: StripeTextProps) => {
+export const StripeText = ({ text = "", color, customClassname = "" }: StripeTextProps) => {
 	return (
 		<span className={`rtd-stripe ${customClassname}`}>
 			<StripeDecorator color={color ?? ""} />
@@ -16,5 +16,3 @@ const StripeText = ({ text = "", color, customClassname = "" }: StripeTextProps)
 		</span>
 	);
 };
-
-export default StripeText;

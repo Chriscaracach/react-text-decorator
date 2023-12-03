@@ -8,7 +8,7 @@ interface StripeTextProps {
 	customClassname: string;
 }
 
-const DotText = ({ text = "", color, customClassname = "" }: StripeTextProps) => {
+export const DotText = ({ text = "", color, customClassname = "" }: StripeTextProps) => {
 	return (
 		<span className={`rtd-dot ${customClassname}`}>
 			<DotDecorator color={color} />
@@ -16,5 +16,3 @@ const DotText = ({ text = "", color, customClassname = "" }: StripeTextProps) =>
 		</span>
 	);
 };
-
-export default DotText;
