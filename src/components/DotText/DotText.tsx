@@ -1,14 +1,9 @@
 import "./DotText.scss";
 
-import DotDecorator from "./DotDecorator";
+import { DotTextProps } from "../../interfaces/DotText";
+import DotDecorator from "./decorator/DotDecorator";
 
-interface StripeTextProps {
-	text: string;
-	color: string;
-	customClassname: string;
-}
-
-export const DotText = ({ text = "", color, customClassname = "" }: StripeTextProps) => {
+export const DotText = ({ text = "", color = "default", customClassname = "" }: DotTextProps) => {
 	return (
 		<span className={`rtd-dot ${customClassname}`}>
 			<DotDecorator color={color} />

@@ -1,0 +1,30 @@
+@import "/src//style/colors";
+
+
+.rtd-dot {
+	&-decorator {
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+	}
+
+	&-color-default {
+		background-color: $default;
+	}
+
+	&-color-info {
+		background-color: $info;
+	}
+
+	&-color-error {
+		background-color: $error;
+	}
+
+	&-color-success {
+		background-color: $success;
+	}
+
+	&-color-warning {
+		background-color: $warning;
+	}
+}

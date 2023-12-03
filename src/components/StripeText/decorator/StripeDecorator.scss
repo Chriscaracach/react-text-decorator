@@ -1,11 +1,4 @@
-$color-palette: (
-	//Maybe we can move this a lever higher.
-	default: black,
-	primary: #3498db,
-	error: #e74c3c,
-	success: #2ecc71,
-	warning: #f39c12
-);
+@import "/src//style/colors";
 
 .rtd-stripe {
 	&-1 {
@@ -36,22 +29,22 @@ $color-palette: (
 	}
 
 	&-color-default {
-		background-color: map-get($color-palette, default);
+		background-color: $default;
 	}
 
-	&-color-primary {
-		background-color: map-get($color-palette, primary);
+	&-color-info {
+		background-color: $info;
 	}
 
 	&-color-error {
-		background-color: map-get($color-palette, error);
+		background-color: $error;
 	}
 
 	&-color-success {
-		background-color: map-get($color-palette, success);
+		background-color: $success;
 	}
 
 	&-color-warning {
-		background-color: map-get($color-palette, warning);
+		background-color: $warning;
 	}
 }
