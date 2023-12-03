@@ -1,5 +1,9 @@
 @import "/src//style/colors";
 
+// TODO Can I unify the colors in just one classname?
+// I'm using the same classname for both components
+// It could be something like rtd-color-*
+
 .rtd-stripe {
 	&-1 {
 		top: 22px;

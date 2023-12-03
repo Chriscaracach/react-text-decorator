@@ -4,62 +4,38 @@ import "../src/components/StripeText/StripeText.scss";
 
 import { render, screen } from "@testing-library/react";
 
-import StripeText from "../src/components/StripeText/StripeText";
+import { StripeText } from "../src/components/StripeText/StripeText";
 
-describe("StripeText Component", () => {
-	it("renders text and custom class", () => {
-		// Arrange
-		const text = "Hello, World!";
-		const color = "error";
+describe("StripeText component", () => {
+	test("renders with default props", () => {
+		render(<StripeText />);
+
+		// Ensure the component is rendered
+		expect(screen.getByTestId("stripe-text")).toBeInTheDocument();
+
+		// Ensure the default color class is applied
+		expect(screen.getByTestId("stripe-text")).toHaveClass("rtd-stripe default");
+
+		// Ensure the text is rendered
+		expect(screen.getByText("")).toBeInTheDocument();
+	});
+
+	test("renders with custom props", () => {
+		const customText = "Custom Text";
+		const customColor = "error";
 		const customClassname = "custom-class";
 
-		// Act
-		render(<StripeText text={text} color={color} customClassname={customClassname} />);
+		render(<StripeText text={customText} color={customColor} customClassname={customClassname} />);
 
-		// Assert
-		const stripeText = screen.getByText(text);
-		expect(stripeText).toBeInTheDocument();
-		expect(stripeText).toHaveClass("rtd-stripe custom-class");
-	});
+		// Ensure the component is rendered
+		expect(screen.getByTestId("stripe-text")).toBeInTheDocument();
 
-	it("renders text with default custom class", () => {
-		// Arrange
-		const text = "Hello, World!";
-		const color = "red";
+		// Ensure the custom color class is applied
+		expect(screen.getByTestId("stripe-text")).toHaveClass(
+			`rtd-stripe ${customColor} ${customClassname}`
+		);
 
-		// Act
-		render(<StripeText text={text} color={color} />);
-
-		// Assert
-		const stripeText = screen.getByText(text);
-		expect(stripeText).toBeInTheDocument();
-		expect(stripeText).toHaveClass("rtd-stripe");
-	});
-
-	it("renders text with default color and custom class", () => {
-		// Arrange
-		const text = "Hello, World!";
-		const customClassname = "custom-class";
-
-		// Act
-		render(<StripeText text={text} customClassname={customClassname} />);
-
-		// Assert
-		const stripeText = screen.getByText(text);
-		expect(stripeText).toBeInTheDocument();
-		expect(stripeText).toHaveClass("rtd-stripe custom-class");
-	});
-
-	it("renders text with default color and custom class when color is not provided", () => {
-		// Arrange
-		const text = "Hello, World!";
-
-		// Act
-		render(<StripeText text={text} />);
-
-		// Assert
-		const stripeText = screen.getByText(text);
-		expect(stripeText).toBeInTheDocument();
-		// expect(stripeText).toHaveClass("rtd-stripe");
+		// Ensure the custom text is rendered
+		expect(screen.getByText(customText)).toBeInTheDocument();
 	});
 });
