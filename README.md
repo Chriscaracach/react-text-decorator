@@ -1,20 +1,20 @@
 # React Decorated Text Library
 
-The React Decorated Text Library is a simple library that allows you to render text with small decorators like lines, dots, and more. It's designed to enhance the presentation of information for your users.
+The React Text Decorator Library is a simple library that allows you to render text with small decorators like lines, dots, and more. It's designed to enhance the presentation of information for your users.
 
 ## Installation
 
 You can install the library via npm or yarn:
 
-npm install react-decorated-text
+npm install @christian-caracach/react-text-decorator
 
 or
 
-yarn add react-decorated-text
+yarn add @christian-caracach/react-text-decorator
 
 ## Usage
 
-The library provides two main components, `StripeText` and `DotText`, to add decorations to your text. Here's how you can use them:
+The library provides two main components, `StripeText` and `DotText` (more will come), to add decorations to your text. Here's how you can use them:
 
 ### StripeText
 
@@ -46,6 +46,8 @@ Both StripeText and DotText components accept the following props:
 
 #### color (string, optional): The color of the stripes (only for StripeText).
 
+#### customClassName (string, optional): Custom className to add styles
+
 You can find more examples and customization options in the examples directory of this repository.
 
 ## License
@@ -58,10 +60,10 @@ Contributions are welcome! Feel free to open issues or submit pull requests to h
 
 ## Author
 
-This library is maintained by Christian Caracach.
+This library is maintained by Christian Caracach. It is my first react library project. Be kind, we're all learning.
 
 ## Support
 
 If you encounter any issues or have questions, please open an issue.
 
-Enjoy using React Decorated Text Library!
+Enjoy using React Text Decorator Library!
