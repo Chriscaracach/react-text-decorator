@@ -1,5 +1,5 @@
 export interface DotTextProps {
-	text: string;
+	text?: string;
 	color?: "default" | "info" | "error" | "success" | "warning";
-	customClassname: string;
+	customClassname?: string;
 }
