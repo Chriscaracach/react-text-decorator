@@ -40,6 +40,7 @@ function MyComponent() {
 
 ## Props
 
+// TODO update Props
 Both StripeText and DotText components accept the following props:
 
 #### text (string, required): The text to be decorated.
