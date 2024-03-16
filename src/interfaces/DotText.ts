@@ -7,6 +7,6 @@ export interface DotTextProps {
 }
 
 export interface DotDecoratorProps {
-	color?: string; // TODO Enum
+	color?: "default" | "info" | "success" | "error" | "warning";
 	size?: "sm" | "md" | "lg";
 }
