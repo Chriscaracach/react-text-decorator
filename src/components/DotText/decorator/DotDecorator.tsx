@@ -1,7 +1,9 @@
 import "./DotDecorator.scss";
 
-const DotDecorator = ({ color }: { color: string }) => {
-	const className = `rtd-dot-decorator rtd-dot-color-${color ? color : "default"}`;
+import { DotDecoratorProps } from "../../../interfaces/DotText";
+
+const DotDecorator = ({ color = "default", size = "md" }: DotDecoratorProps) => {
+	const className = `rtd-dot-decorator rtd-dot-color-${color} rtd-dot-decorator-size-${size}`;
 
 	return <div className={className}></div>;
 };

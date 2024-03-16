@@ -1,13 +1,26 @@
 @import "/src//style/colors";
 
-
 .rtd-dot {
 	&-decorator {
-		width: 8px;
-		height: 8px;
 		border-radius: 50%;
+
+		&-size {
+			&-sm {
+				width: 5px;
+				height: 5px;
+			}
+			&-md {
+				width: 8px;
+				height: 8px;
+			}
+			&-lg {
+				width: 12px;
+				height: 12px;
+			}
+		}
 	}
 
+	// TODO Fix this
 	&-color-default {
 		background-color: $default;
 	}

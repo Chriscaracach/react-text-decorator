@@ -3,7 +3,6 @@ import "./DotText.scss";
 import { DotTextProps } from "../../interfaces/DotText";
 import DotDecorator from "./decorator/DotDecorator";
 
-// TODO Add size feature
 // TODO Check what are we gonna do with the "rtd-dot" classname
 
 export const DotText = ({
@@ -11,6 +10,7 @@ export const DotText = ({
 	color = "default",
 	customClassname = "",
 	position = "left",
+	size,
 }: DotTextProps) => {
 	let positioned;
 
@@ -18,8 +18,8 @@ export const DotText = ({
 		case "left":
 			positioned = (
 				<>
-					<DotDecorator color={color} />
-					<p>{text}</p>{" "}
+					<DotDecorator color={color} size={size} />
+					<p>{text}</p>
 				</>
 			);
 			break;
@@ -27,7 +27,7 @@ export const DotText = ({
 			positioned = (
 				<>
 					<p>{text}</p>
-					<DotDecorator color={color} />
+					<DotDecorator color={color} size={size} />
 				</>
 			);
 			break;

@@ -15,5 +15,6 @@ export const Default: Story = {
 		text: "DotText",
 		color: "default",
 		customClassname: "",
+		size: "md",
 	},
 };
