@@ -3,6 +3,7 @@ import "@testing-library/jest-dom/extend-expect";
 import "../src/components/StripeText/StripeText.scss";
 
 import { render, screen } from "@testing-library/react";
+import React from "react";
 
 import { StripeText } from "../src/components/StripeText/StripeText";
 

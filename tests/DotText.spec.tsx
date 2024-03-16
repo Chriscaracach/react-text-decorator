@@ -1,8 +1,9 @@
 // Import necessary dependencies
-import "@testing-library/jest-dom/extend-expect";
 import "../src/components/DotText/DotText.scss";
+import "@testing-library/jest-dom/extend-expect";
 
 import { render, screen } from "@testing-library/react";
+import React from "react";
 
 import { DotText } from "../src/components/DotText/DotText";
 
