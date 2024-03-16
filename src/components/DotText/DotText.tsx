@@ -10,7 +10,7 @@ export const DotText = ({
 	color = "default",
 	customClassname = "",
 	position = "left",
-	size,
+	size = "md",
 }: DotTextProps) => {
 	let positioned;
 
