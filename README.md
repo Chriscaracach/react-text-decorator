@@ -23,7 +23,7 @@ import React from "react";
 import { StripeText } from "react-decorated-text";
 
 function MyComponent() {
-	return <StripeText text="This is a decorated text with stripes." color="primary" />;
+	return <StripeText text="This is a decorated text with stripes." color="primary" size="lg" />;
 }
 ```
 
@@ -34,18 +34,21 @@ import React from "react";
 import { DotText } from "react-decorated-text";
 
 function MyComponent() {
-	return <DotText text="This is a decorated text with dots." dotColor="error" />;
+	return <DotText text="This is a decorated text with dots." color="error" position="right" />;
 }
 ```
 
 ## Props
 
-// TODO update Props
 Both StripeText and DotText components accept the following props:
 
 #### text (string, required): The text to be decorated.
 
-#### color (string, optional): The color of the stripes (only for StripeText).
+#### color (string, optional): The color of the stripes (only for StripeText)
+
+#### position (string, optional): The decorator position (only for DotText)
+
+#### size (string, optional): The decorator size
 
 #### customClassName (string, optional): Custom className to add styles
 

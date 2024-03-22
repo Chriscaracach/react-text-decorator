@@ -3,8 +3,6 @@ import "./DotText.scss";
 import { DotTextProps } from "../../interfaces/DotText";
 import DotDecorator from "./decorator/DotDecorator";
 
-// TODO Check what are we gonna do with the "rtd-dot" classname
-
 export const DotText = ({
 	text = "",
 	color = "default",
