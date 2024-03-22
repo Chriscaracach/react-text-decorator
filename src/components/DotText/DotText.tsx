@@ -17,14 +17,14 @@ export const DotText = ({
 			positioned = (
 				<>
 					<DotDecorator color={color} size={size} />
-					<p>{text}</p>
+					<p data-testid="dot-text-content">{text}</p>
 				</>
 			);
 			break;
 		case "right":
 			positioned = (
 				<>
-					<p>{text}</p>
+					<p data-testid="dot-text-content">{text}</p>
 					<DotDecorator color={color} size={size} />
 				</>
 			);

@@ -25,8 +25,16 @@ describe("DotText component", () => {
 		const customText = "Custom Text";
 		const customColor = "error";
 		const customClassname = "custom-class";
+		const customPosition = "right";
 
-		render(<DotText text={customText} color={customColor} customClassname={customClassname} />);
+		render(
+			<DotText
+				text={customText}
+				color={customColor}
+				position={customPosition}
+				customClassname={customClassname}
+			/>
+		);
 
 		// Ensure the component is rendered
 		expect(screen.getByTestId("dot-text")).toBeInTheDocument();
@@ -34,8 +42,27 @@ describe("DotText component", () => {
 		// Ensure the custom color class is applied
 		expect(screen.getByTestId("dot-text")).toHaveClass(`rtd-dot ${customClassname}`);
 
+		// Ensure decorator receives custom color
+		expect(screen.getByTestId("dot-decorator")).toHaveClass(
+			`rtd-dot-decorator rtd-dot-decorator-color-${customColor}`
+		);
+
 		// Ensure the custom text is rendered
 		expect(screen.getByText(customText)).toBeInTheDocument();
+	});
+
+	test("renders decorator position correctly", () => {
+		// Render the component
+		render(<DotText text="test" position="right" />);
+
+		// Get the elements
+		const content = screen.getByTestId("dot-text-content");
+		const decorator = screen.getByTestId("dot-decorator");
+
+		// Ensure dot is rendered "after" content
+		expect(
+			content.compareDocumentPosition(decorator) & Node.DOCUMENT_POSITION_FOLLOWING
+		).toBeGreaterThan(0);
 	});
 
 	test("renders with empty text", () => {
