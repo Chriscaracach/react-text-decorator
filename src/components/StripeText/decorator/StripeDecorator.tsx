@@ -1,7 +1,9 @@
 import "./StripeDecorator.scss";
 
-const StripeDecorator = ({ color }: { color: string }) => {
-	const className = `rtd-stripe-color-${color ? color : "default"}`;
+import { StripeDecoratorProps } from "../../../interfaces/StripeText";
+
+const StripeDecorator = ({ color = "default", size = "md" }: StripeDecoratorProps) => {
+	const className = `rtd-stripe-color-${color} rtd-stripe-decorator-size-${size}`;
 
 	return (
 		<>

@@ -10,8 +10,6 @@
 		left: -11px;
 		position: relative;
 		background-color: black;
-		width: 10px;
-		height: 1px;
 	}
 	&-2 {
 		transform: rotate(45deg);
@@ -19,8 +17,6 @@
 		left: -8px;
 		position: relative;
 		background-color: black;
-		width: 10px;
-		height: 1px;
 	}
 	&-3 {
 		transform: rotate(90deg);
@@ -28,8 +24,23 @@
 		left: -3px;
 		position: relative;
 		background-color: black;
-		width: 10px;
-		height: 1px;
+	}
+
+	&-decorator {
+		&-size {
+			&-sm {
+				width: 7px;
+				height: 0.8px;
+			}
+			&-md {
+				width: 10px;
+				height: 1px;
+			}
+			&-lg {
+				width: 14px;
+				height: 1.4px;
+			}
+		}
 	}
 
 	&-color-default {
