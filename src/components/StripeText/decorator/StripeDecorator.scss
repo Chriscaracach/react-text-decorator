@@ -4,7 +4,7 @@
 // I'm using the same classname for both components
 // It could be something like rtd-color-*
 
-.rtd-stripe {
+.rtd-stripe-decorator {
 	&-1 {
 		top: 22px;
 		left: -11px;
@@ -26,40 +26,36 @@
 		background-color: black;
 	}
 
-	&-decorator {
-		&-size {
-			&-sm {
-				width: 7px;
-				height: 0.8px;
-			}
-			&-md {
-				width: 10px;
-				height: 1px;
-			}
-			&-lg {
-				width: 14px;
-				height: 1.4px;
-			}
+	&-size {
+		&-sm {
+			width: 7px;
+			height: 0.8px;
+		}
+		&-md {
+			width: 10px;
+			height: 1px;
+		}
+		&-lg {
+			width: 14px;
+			height: 1.4px;
 		}
 	}
 
-	&-color-default {
-		background-color: $default;
-	}
-
-	&-color-info {
-		background-color: $info;
-	}
-
-	&-color-error {
-		background-color: $error;
-	}
-
-	&-color-success {
-		background-color: $success;
-	}
-
-	&-color-warning {
-		background-color: $warning;
+	&-color {
+		&-default {
+			background-color: $default;
+		}
+		&-info {
+			background-color: $info;
+		}
+		&-error {
+			background-color: $error;
+		}
+		&-success {
+			background-color: $success;
+		}
+		&-warning {
+			background-color: $warning;
+		}
 	}
 }

@@ -3,8 +3,6 @@ import "./StripeText.scss";
 import type { StripeTextProps } from "../../interfaces/StripeText";
 import StripeDecorator from "./decorator/StripeDecorator";
 
-// TODO See what are we going to do with the "rtd-stripe" classname
-
 export const StripeText = ({
 	text = "",
 	color = "default",
