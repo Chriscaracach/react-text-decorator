@@ -1,0 +1,20 @@
+NOTES
+
+Let's think about new features.
+I'll write down and keep ideas here.
+
+1 - Add "badge" decorator. It should be a badge (maybe a small dot at the begining), we can handle inner text later. 
+    Possible props: placement, size, color, content(?)
+    Inspiration: https://rsuitejs.com/components/badge/#badge
+
+2 - Can we migrate current logic (<Decorator content="..." />) to more intuitive way (<Decorator>{content}</Decorator>)???
+
+3 - Let's add some actions. Maybe "onHover" or "appearsOn="hover"". Something like that.
+
+4 - Animations (?) fadeIn, fadeOut, active(?)
+
+5 - Create Docs site. Docusaurus(?). I like it
+    https://docusaurus.io/docs/installation
+    https://vercel.com/guides/deploying-docusaurus-with-vercel
+
+6 - Create library Logo
