@@ -18,3 +18,5 @@ I'll write down and keep ideas here.
     https://vercel.com/guides/deploying-docusaurus-with-vercel
 
 6 - Create library Logo
+
+7 - Wrap all colors in one, and use from there. (rtd-color-{color})

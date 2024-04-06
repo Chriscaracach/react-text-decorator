@@ -9,4 +9,5 @@ export interface BadgeTextProps {
 export interface BadgeDecoratorProps {
 	color?: "default" | "info" | "success" | "error" | "warning";
 	size?: "sm" | "md" | "lg";
+	position?: "topRight" | "topLeft" | "bottomRight" | "bottomLeft";
 }

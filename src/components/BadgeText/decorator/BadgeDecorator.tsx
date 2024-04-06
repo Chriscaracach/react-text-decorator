@@ -2,10 +2,14 @@ import "./BadgeDecorator.scss";
 
 import { BadgeDecoratorProps } from "../../../interfaces/BadgeText";
 
-const BadgeDecorator = ({ color = "default", size = "md" }: BadgeDecoratorProps) => {
-	const className = `rtd-dot-decorator rtd-dot-decorator-color-${color} rtd-dot-decorator-size-${size}`;
+const BadgeDecorator = ({
+	color = "default",
+	size = "md",
+	position = "topLeft",
+}: BadgeDecoratorProps) => {
+	const className = `rtd-badge-decorator rtd-badge-decorator-color-${color} rtd-badge-decorator-size-${size} rtd-badge-decorator-position-${position}`;
 
-	return <div className={className} data-testid="dot-decorator"></div>;
+	return <div className={className} data-testid="badge-decorator"></div>;
 };
 
 export default BadgeDecorator;

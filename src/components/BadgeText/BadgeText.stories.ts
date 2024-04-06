@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { BadgeText } from "./BadgeText";
 
 const meta = {
-	title: "DotText",
+	title: "BadgeText",
 	component: BadgeText,
 } satisfies Meta<typeof BadgeText>;
 
@@ -12,9 +12,10 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
 	args: {
-		text: "DotText",
+		text: "BadgeText",
 		color: "default",
 		customClassname: "",
 		size: "md",
+		position: "topLeft",
 	},
 };
