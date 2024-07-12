@@ -2,7 +2,7 @@ import type { StripeTextProps } from "../../interfaces/StripeText";
 import StripeDecorator from "./decorator/StripeDecorator";
 
 export const StripeText = ({
-	text = "",
+	children = "",
 	color = "default",
 	customClassname = "",
 	size = "md",
@@ -10,7 +10,7 @@ export const StripeText = ({
 	return (
 		<div className={`${customClassname}`} data-testid="stripe-text">
 			<StripeDecorator color={color} size={size} />
-			<p>{text}</p>
+			<p>{children}</p>
 		</div>
 	);
 };

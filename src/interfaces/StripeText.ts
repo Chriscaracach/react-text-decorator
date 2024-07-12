@@ -1,5 +1,5 @@
 export interface StripeTextProps {
-	text?: string;
+	children?: React.ReactNode;
 	color?: "default" | "info" | "error" | "success" | "warning";
 	customClassname?: string;
 	size?: "sm" | "md" | "lg";
