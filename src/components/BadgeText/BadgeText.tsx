@@ -4,7 +4,7 @@ import { BadgeTextProps } from "../../interfaces/BadgeText";
 import BadgeDecorator from "./decorator/BadgeDecorator";
 
 export const BadgeText = ({
-	text = " ",
+	children,
 	color,
 	customClassname = "",
 	position,
@@ -12,7 +12,7 @@ export const BadgeText = ({
 }: BadgeTextProps) => {
 	return (
 		<div className={`rtd-badge-text-container ${customClassname}`} data-testid="badge-text">
-			<span data-testid="badge-text-content">{text}</span>
+			<span data-testid="badge-text-content">{children}</span>
 			<BadgeDecorator color={color} size={size} position={position} />
 		</div>
 	);

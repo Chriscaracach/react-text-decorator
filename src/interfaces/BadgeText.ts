@@ -1,5 +1,5 @@
 export interface BadgeTextProps {
-	text?: string;
+	children: React.ReactNode;
 	color?: "default" | "info" | "error" | "success" | "warning";
 	customClassname?: string;
 	position?: "topRight" | "topLeft" | "bottomRight" | "bottomLeft";
