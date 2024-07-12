@@ -5,22 +5,6 @@ import { StripeText } from "./StripeText";
 const meta = {
 	title: "StripeText",
 	component: StripeText,
-	argTypes: {
-		children: {
-			control: "text",
-		},
-		color: {
-			control: "select",
-			options: ["default", "primary", "secondary"],
-		},
-		customClassname: {
-			control: "text",
-		},
-		size: {
-			control: "select",
-			options: ["sm", "md", "lg"],
-		},
-	},
 } satisfies Meta<typeof StripeText>;
 
 export default meta;
