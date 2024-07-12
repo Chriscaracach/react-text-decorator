@@ -1,4 +1,4 @@
-@import "/src//style/colors";
+@import "/src/style/colors";
 
 .rtd-badge-decorator {
 	border-radius: 50%;
@@ -38,16 +38,24 @@
 
 	&-position {
 		&-topLeft {
-			position: relative;
-			top: -22px;
+			position: absolute;
+			top: -5px;
 			left: -5px;
-			background-color: red !important;
 		}
 		&-topRight {
+			position: absolute;
+			top: -5px;
+			right: -8px;
 		}
 		&-bottomLeft {
+			position: absolute;
+			top: 15px;
+			left: -5px;
 		}
 		&-bottomRight {
+			position: absolute;
+			top: 15px;
+			right: -8px;
 		}
 	}
 }
