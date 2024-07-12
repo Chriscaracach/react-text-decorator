@@ -4,7 +4,7 @@ import { DotTextProps } from "../../interfaces/DotText";
 import DotDecorator from "./decorator/DotDecorator";
 
 export const DotText = ({
-	text = "",
+	children = "",
 	color = "default",
 	customClassname = "",
 	position = "left",
@@ -17,14 +17,14 @@ export const DotText = ({
 			positioned = (
 				<>
 					<DotDecorator color={color} size={size} />
-					<p data-testid="dot-text-content">{text}</p>
+					<p data-testid="dot-text-content">{children}</p>
 				</>
 			);
 			break;
 		case "right":
 			positioned = (
 				<>
-					<p data-testid="dot-text-content">{text}</p>
+					<p data-testid="dot-text-content">{children}</p>
 					<DotDecorator color={color} size={size} />
 				</>
 			);

@@ -1,5 +1,5 @@
 export interface DotTextProps {
-	text?: string;
+	children?: React.ReactNode;
 	color?: "default" | "info" | "error" | "success" | "warning";
 	customClassname?: string;
 	position?: "left" | "right";
