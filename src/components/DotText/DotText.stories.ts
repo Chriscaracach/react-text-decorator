@@ -16,5 +16,6 @@ export const Default: Story = {
 		color: "default",
 		customClassname: "",
 		size: "md",
+		position: "left",
 	},
 };
